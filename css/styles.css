@@ -563,6 +563,21 @@ button {
 .social-media-icon {
   fill: #f4f4fd;
 }
+.footer-container-subscribe {
+  display: flex;
+  display: inline-block;
+  margin-left: 88px;
+}
+.social-media-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
 
 /* modal-window */
 .backdrop {
