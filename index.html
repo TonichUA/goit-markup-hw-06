@@ -451,7 +451,7 @@
         </div>
         <div class="footer-container-subscribe">
           <p class="social-media-title">Subscribe</p>
-          <form>
+          <form class="footer-form">
             <label>
               <input
                 class="footer-input"
@@ -460,7 +460,7 @@
                 placeholder="E-mail"
               />
             </label>
-            <button type="submit">
+            <button class="footer-form-btn" type="submit">
               Subscribe
               <svg class="subscribe-send-icon" width="24" height="20">
                 <use href="./images/icons.svg#icon-icon-send"></use>
@@ -470,13 +470,58 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="close-modal-btn" type="button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <label for="user-name" class="modal-label"> <span>Name</span> </label>
+          <input
+            id="user-name"
+            type="text"
+            name="user-name"
+            class="modal-input"
+            placeholder=""
+            required
+          />
+          <label for="user-tel" class="modal-label"> <span>Phone</span> </label>
+          <input
+            id="user-tel"
+            type="tel"
+            name="user-tel"
+            class="modal-input"
+            placeholder=""
+            required
+            pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+          />
+          <label for="user-email" class="modal-label">
+            <span>Email</span>
+          </label>
+          <input
+            id="user-email"
+            type="email"
+            name="user-email"
+            class="modal-input"
+            placeholder=""
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          />
+          <label for="user-comment" class="modal-label">
+            <span>Comment</span></label
+          >
+          <input
+            id="user-comment"
+            type="text"
+            name="user-comment"
+            class="modal-input"
+            placeholder="Text input"
+          />
+          <button type="submit" class="modal-submit-btn">Submit</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
