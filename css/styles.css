@@ -667,11 +667,6 @@ button {
   margin-left: auto;
   margin-bottom: 24px;
 
-  /* position: absolute;
-  top: 24px;
-  right: 24px;
-  padding: 0; */
-
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -703,15 +698,52 @@ button {
 .modal-input {
   width: 360px;
   height: 54px;
-  border: 1px solid #4d5ae5;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  margin-bottom: 8px;
+
   padding-left: 16px;
+  outline: transparent;
+}
+.modal-input:focus {
+  border-color: var(--first-btn-and-link-color);
+}
+.modal-input:focus + .modal-icon {
+  fill: var(--first-btn-and-link-color);
 }
 
-.modal-label span {
+.modal-label {
   display: block;
   margin-bottom: 4px;
+}
+.modal-field {
+  margin-bottom: 8px;
+}
+
+.input-wrap {
+  position: relative;
+}
+.modal-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-textarea {
+  width: 360px;
+  min-height: 120px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding: 8px 15px;
+  resize: none;
+  margin-bottom: 16px;
+  transition: border var(--transition-dur-and-func);
+}
+.modal-textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 /* portfolio */
 
