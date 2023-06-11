@@ -717,6 +717,7 @@ button {
 }
 .modal-field {
   margin-bottom: 8px;
+  position: relative;
 }
 
 .input-wrap {
@@ -730,7 +731,7 @@ button {
 }
 
 .modal-textarea {
-  width: 360px;
+  width: 100%;
   min-height: 120px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -745,6 +746,28 @@ button {
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
+
+.check-text {
+  display: flex;
+  align-items: center;
+}
+
+.check-text span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.modal-check:checked + .check-text span {
+  background: #404bbf;
+
+  border: 1px solid #404bbf;
+  border-radius: 2px;
+}
+
+
 /* portfolio */
 
 /* header */
